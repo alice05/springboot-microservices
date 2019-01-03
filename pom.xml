@@ -17,6 +17,7 @@
         <java.version>1.8</java.version>
     </properties>
     <modules>
+        <module>confsvr</module>
         <module>licensing-service</module>
     </modules>
     <build>
