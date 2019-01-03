@@ -39,22 +39,22 @@ public class License {
     }
 
 
-    public License id(String id) {
+    public License withId(String id) {
         this.id = id;
         return this;
     }
 
-    public License organizationId(String organizationId) {
+    public License withOrganizationId(String organizationId) {
         this.organizationId = organizationId;
         return this;
     }
 
-    public License productName(String productName) {
+    public License withProductName(String productName) {
         this.productName = productName;
         return this;
     }
 
-    public License licenseType(String licenseType) {
+    public License withLicenseType(String licenseType) {
         this.licenseType = licenseType;
         return this;
     }
