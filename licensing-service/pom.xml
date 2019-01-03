@@ -16,7 +16,7 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<start-class>com.alice.licenses.MyApplication</start-class>
+		<start-class>com.alice.licensingservice.MyApplication</start-class>
 		<docker.image.name>alice/licensing-service</docker.image.name>
 		<docker.image.tag>chapter2</docker.image.tag>
 	</properties>
