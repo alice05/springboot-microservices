@@ -7,4 +7,14 @@ services:
   configserver:
       image: alice/confsvr:chapter3
       ports:
-        - "8888:8888"      
+        - "8888:8888"
+      environment:
+        ENCRYPT_KEY:       "IMSYMMETRIC"      
+  database:
+      image: postgres:11.1
+      ports:
+        - "5432:5432"
+      environment:
+        POSTGRES_USER: "postgres"
+        POSTGRES_PASSWORD: "p0stgr@s"
+        POSTGRES_DB:       "eagle_eye_local"

@@ -1,10 +1,22 @@
 server:
   port: 8888
 spring:
- profiles:
-   active: native
- cloud:
+  cloud:
     config:
       server:
-          native:
-             searchLocations: file:///Users/santoshkc/springboot/springboot-chapter-2/confsvr/src/main/resources/config/licensingservice
+        encrypt.enabled: false
+        git:
+          uri: https://github.com/alice05/config-repo/
+          searchPaths: licensingservice,organizationservice
+
+
+#server:
+#  port: 8888
+#spring:
+# profiles:
+#   active: native
+# cloud:
+#    config:
+#      server:
+#          native:
+#             searchLocations: file:///Users/santoshkc/springboot/springboot-chapter-2/confsvr/src/main/resources/config/licensingservice
